@@ -1,0 +1,348 @@
+:root {
+	--title-font: 'Fraunces', serif;
+	--body-font: 'Nunito Sans', sans-serif;
+	--caps-body-font: uppercase;
+	--orange: #ff3800;
+	--section-title-size: 40px;
+	--margin-left: 1%;
+	--margin-right: 1%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: var(--body-font);
+}
+.menu,
+.nav_bg {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+}
+a {
+	text-decoration: none;
+}
+.nav_bg {
+	background-color: #1e1e1e;
+	/* opacity: 0.9; */
+}
+h1{
+	font-family: var(--title-font);
+}
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+.menu-item a{
+	text-decoration: none;
+	padding: 0px 0px 0px 60px;
+	color: #dadada;
+}
+.menu-item a:active, a:visited{
+	text-decoration: none;
+	color: #dadada;
+}
+.menu-item a:hover{
+	color: var(--orange);
+}
+.logo-icon {
+	padding: 5px 0px 0px 30px;
+}
+.navigation {
+	color: #FFFFFF;
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../assets/bg.jpeg'), lightgray 50% / cover no-repeat;
+	text-align: center;
+}
+
+.hero_text {
+	padding: 140px 0px 0px 0px;
+	color: #FFFFFF;
+	height: 100vh;
+	font-weight: 500;
+	font-family: var(--body-font);
+	font-size: 100%;
+}
+.hero_text p {
+	margin: 0 310px;
+	
+}
+.hero_sub_title{
+	font-size: 14px;
+	font-weight: 50;
+	padding: 15px 0px 0px 0px;
+	text-transform: uppercase;
+}
+.image{
+	background-size: cover;
+	margin-left: var(--margin-left);
+	margin-right: var(--margin-right);
+}
+.photo_attrib{
+	font-size: 8px;
+	color: #1e1e1e;
+	display: flex;
+	justify-content: center;
+}
+.image img {
+	padding-top: 10dvh;
+	object-fit: cover;
+	width: 79%;
+	height: 30%;
+}
+.image_text{
+	color: #000;
+	font-family: var(--title-font);
+	padding-top: 50px;
+}
+h2{
+	font-family: var(--title-font);
+	font-size: var(--section-title-size);
+	justify-content: center;
+	text-align: center;
+	padding: 130px 0px 50px 0px;
+}
+
+/* section start */
+.sec{
+	/* this sets the margin for the whole section part */
+	margin: 500px 113px 0px 113px;
+}
+.sec a{
+	color: #000;
+}
+.sec p{
+	text-align: center;
+}
+/* section end */
+
+/* services section start */
+.services_item{
+	padding: 0px 0px 0px 40px;
+	display: inline-flex;
+	justify-content: center;
+}
+.services_item p{
+	width: 310px;
+	
+}
+.services_item img{
+	width: 320px;
+	height: 290px;
+	padding-bottom: 30px;
+	object-fit:cover;
+	
+}
+/* services section end */
+
+/* about us section start */
+.about_us {
+	padding: 80px 0px 0px 0px;
+	margin: 0px 113px;
+	display: flex;
+  	justify-content: center;
+}
+.about_us_desc{
+	margin: 0 220px;
+
+}
+.about_us_item{
+	padding: 0px 15px;
+}
+.about_us_item img{
+	border-radius: 2%;
+	width: 220px;
+	height: 200px;
+	object-fit: fill;
+}
+
+/* about us section end */
+
+/* networks section start*/
+
+.brand_list{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.brand_item{
+	list-style: none;
+	font-weight: 700;
+	padding: 80px 60px 0px;
+	text-transform: uppercase;
+}
+.networks_item{
+	padding: 60px 0px 0px 40px;
+	display: inline-flex;
+	justify-content: center;
+	
+}
+.networks_desc{
+	margin: 0 220px;
+}
+.networks_item p{
+	padding-top: 50px;
+	width: 310px;
+	font-weight: 600;
+}
+.networks_item img{
+	width: 320px;
+	height: 300px;
+	border-radius: 2%;
+	object-fit: cover;
+}
+.networks_item span{
+	display: flex;
+	justify-content: center;
+}
+
+
+/* network button animation start*/
+button {
+	justify-content: center;
+	display: inline-block;
+	border-radius: 4px;
+	background-color: var(--orange);
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: initial;
+	padding: 20px;
+	width: 180px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px 15px;
+}
+.btns{
+	display: flex;
+  	justify-content: center; /* Center the buttons horizontally */
+  	margin-top: 30px; /* Add some space between buttons and content */
+}
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+  
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+  
+button:hover span {
+	padding-right: 25px;
+}
+  
+button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+/* network button animation end*/
+/* networks section end*/
+
+/* contact us section start */
+.contact_us{
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
+}
+.contact_us a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+.contact_us_img1{
+	width: 550px;
+	height: 300px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../assets/USA.jpg'), lightgray 50% / cover no-repeat;
+
+}
+
+.contact_us_img2{
+	width: 550px;
+	height: 300px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../assets/USA.jpg'), lightgray 50% / cover no-repeat;
+
+	
+}
+.contact_us p{
+	color: #dadada;
+	/* margin: 0 auto; */
+}
+/* contact us section end */
+
+.footer{
+	/* align-items: center; */
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	flex-direction: column;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%), url('../assets/bg.jpeg'), lightgray 50% / cover no-repeat;
+}
+.footer_content{
+	width: 50%;
+}
+input[type=email] {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, 0.80);
+	background-image: url('../assets/soc_med_icons/paper-plane.png');
+	/* attribute author */
+	/* <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Pixel perfect - Flaticon</a> */
+	background-size: 25px;
+	background-position: right 10px center; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	color: #FFFFFF;
+
+  }
+  .socmed_icons{
+	margin-top: 50px;
+	background-size: 50px;
+	display: flex;
+	justify-content: center;
+  }
+  .socmed_icons a{
+	padding: 0px 10px;
+  }
+  .foot-links{
+	padding-top: 50px;
+	align-self: end;
+	margin-right: 113px;
+  }
+  .foot-links a{
+	color: #dadada;
+	padding-left: 30px;
+  }
+  .foot-links a:hover{
+	color: var(--orange);
+  }
+  .copyright{
+	color: #dadada;
+	position: absolute;
+	padding-top: 35%;
+  }
