@@ -25,6 +25,17 @@ body {
 a {
 	text-decoration: none;
 }
+.icons{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-right: 20%;
+}
+.nav_icons{
+	padding: 0px 5px;
+}
 .nav_bg {
 	background-color: #1e1e1e;
 	/* opacity: 0.9; */
@@ -51,7 +62,8 @@ h1{
 	color: var(--orange);
 }
 .logo-icon {
-	padding: 5px 0px 0px 30px;
+	padding: 3px 0px 0px 0px;
+	margin-left: 10%;
 }
 .navigation {
 	color: #FFFFFF;
